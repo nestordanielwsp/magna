@@ -1,0 +1,28 @@
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\logic.dll.config
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\logic.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\logic.pdb
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\EPPlus.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\Newtonsoft.Json.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\NPOI.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\RestSharp.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\Newtonsoft.Json.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\bin\Debug\RestSharp.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\obj\Debug\logic.csprojAssemblyReference.cache
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\obj\Debug\logic.csproj.CoreCompileInputs.cache
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\obj\Debug\logic.csproj.CopyComplete
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\obj\Debug\logic.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\logic\obj\Debug\logic.pdb
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\logic.dll.config
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\logic.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\logic.pdb
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\EPPlus.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\Newtonsoft.Json.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\NPOI.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\RestSharp.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\Newtonsoft.Json.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\bin\Debug\RestSharp.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\obj\Debug\logic.csproj.AssemblyReference.cache
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\obj\Debug\logic.csproj.CoreCompileInputs.cache
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\obj\Debug\logic.csproj.CopyComplete
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\obj\Debug\logic.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\logic\obj\Debug\logic.pdb
