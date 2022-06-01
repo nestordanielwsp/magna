@@ -156,7 +156,10 @@
     <Content Include="App_Themes\Theme1\tooltipster.bundle.min.css" />
     <Content Include="Archivo.aspx" />
     <Content Include="assets\fonts\socicon.svg" />
+    <Content Include="assets\pictures\avatar-s-11.jpg" />
     <Content Include="assets\pictures\pic-profile.png" />
+    <Content Include="css\angular-material.min.css" />
+    <Content Include="css\font-awesome.min.css" />
     <Content Include="css\Login\font-awesome.min.css" />
     <Content Include="css\Login\font-face-login.css" />
     <Content Include="css\Login\login.css" />
@@ -1614,7 +1617,11 @@
     <Content Include="Scripts\librerias\angular-multi-select\spec\helpers\object-extention.js" />
     <Content Include="Scripts\librerias\angular-multi-select\spec\isteven-multi-select.spec.js" />
     <Content Include="Scripts\librerias\angular-switcher.min.js" />
+    <Content Include="Scripts\librerias\angular\angular-animate.min.js" />
+    <Content Include="Scripts\librerias\angular\angular-aria.min.js" />
+    <Content Include="Scripts\librerias\angular\angular-material.min.js" />
     <Content Include="Scripts\librerias\angular\angular-ui-tree.js" />
+    <Content Include="Scripts\librerias\angular\angular.min.js" />
     <Content Include="Scripts\librerias\jquery-1.10.2.min.js" />
     <Content Include="Scripts\librerias\jquery-migrate-1.2.1.min.js" />
     <Content Include="packages.config" />
@@ -1650,7 +1657,7 @@
     <Content Include="Scripts\librerias\smart-table.add.ons.js" />
     <Content Include="Scripts\pages\appController.js" />
     <Content Include="Scripts\pages\ayudaController.js" />
-    <Content Include="Scripts\pages\inicio.js" />
+    <Content Include="Scripts\pages\inicioController.js" />
     <Content Include="Scripts\pages\configuracionGeneralController.js" />
     <Content Include="Scripts\pages\masterPageController.js" />
     <Content Include="Scripts\utilerias\bind.js" />

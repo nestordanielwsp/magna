@@ -52,9 +52,9 @@ namespace magnajs.includes
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ruta = Base.URL;
-            if (!Page.IsPostBack)
-            {
+            //ruta = Base.URL;
+            //if (!Page.IsPostBack)
+            //{
                 //sUsuario.InnerText = (HttpContext.Current.Session["Usuario"] != null
                 //    ? HttpContext.Current.Session["Usuario"].ToString()
                 //    : "");
@@ -64,22 +64,22 @@ namespace magnajs.includes
 
               
 
-            }
-            var rutaArchivo = ConfigurationManager.AppSettings["CarpetaArchivos"] + HttpContext.Current.Session["UID"];
-            var rutaCompletaArchivo = HttpContext.Current.Server.MapPath(rutaArchivo);
-            //var rutaCompletaArchivo = (rutaArchivo);
+            //}
+            //var rutaArchivo = ConfigurationManager.AppSettings["CarpetaArchivos"] + HttpContext.Current.Session["UID"];
+            //var rutaCompletaArchivo = HttpContext.Current.Server.MapPath(rutaArchivo);
+            ////var rutaCompletaArchivo = (rutaArchivo);
          
-            var jsonMenu = Base.SerializerJson(GetMenu());
-            this.RunJavascriptBeforeLoadPage("var appMenu = jQuery.parseJSON('" + HttpUtility.JavaScriptStringEncode(jsonMenu) + "');");
+            //var jsonMenu = Base.SerializerJson(GetMenu());
+            //this.RunJavascriptBeforeLoadPage("var appMenu = jQuery.parseJSON('" + HttpUtility.JavaScriptStringEncode(jsonMenu) + "');");
 
-            if (File.Exists(rutaCompletaArchivo))
-            {
+            //if (File.Exists(rutaCompletaArchivo))
+            //{
 
-                this.RunJavascriptBeforeLoadPage("var ImgPerfil = '" + rutaArchivo.Replace("~", "..").Replace("\\", "/") + "';var Usuario='"+Convert.ToString(HttpContext.Current.Session["Usuario"]) + "'");
+            //    this.RunJavascriptBeforeLoadPage("var ImgPerfil = '" + rutaArchivo.Replace("~", "..").Replace("\\", "/") + "';var Usuario='"+Convert.ToString(HttpContext.Current.Session["Usuario"]) + "'");
 
-            }
-            else
-                this.RunJavascriptBeforeLoadPage("var ImgPerfil = '';var Usuario='" + Convert.ToString(HttpContext.Current.Session["Usuario"]) + "'");
+            //}
+            //else
+            //    this.RunJavascriptBeforeLoadPage("var ImgPerfil = '';var Usuario='" + Convert.ToString(HttpContext.Current.Session["Usuario"]) + "'");
 
         }
 

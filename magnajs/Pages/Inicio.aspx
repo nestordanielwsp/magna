@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="main" runat="server">
-    <div class="view dashboard" ng-if="ctrl.currentView === 'Dashboard'" ng-controller="DashboardController as ctrl">
+    <div class="view dashboard" ng-controller="inicioController as vm">
       <h1>Dashboard</h1>
 
        
@@ -43,6 +43,6 @@
       </div>
     </div>
 
-
+    <script type="text/javascript" src="../Scripts/pages/inicioController.js?v=1.1<%=DateTime.Now.Millisecond %>"></script>
 </asp:Content>
 
