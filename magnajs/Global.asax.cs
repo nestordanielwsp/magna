@@ -26,7 +26,7 @@ namespace magnajs
         {
             // Code that runs when an unhandled error occurs
 
-           Response.Redirect("~/Pages/Login.aspx");
+           //Response.Redirect("~/Pages/Login.aspx");
         }
         public static void RegisterRoutes(RouteCollection routes)
         {

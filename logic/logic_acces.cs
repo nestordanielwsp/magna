@@ -39,17 +39,17 @@ namespace logic
 
         public logic_acces(String strConn)
         {
-            if (HttpContext.Current.Session["UsuarioId"] == null)
-            {
-                string msgError = Base.CommonResourceManager.GetMessage("msgSinSesion") == null ? " -999.- La sesión ha caducado se requiere volver a iniciar sesión." : Base.CommonResourceManager.GetMessage("msgSinSesion");
-                //Response.Redirect("~/Pages/login.aspx");
+            //if (HttpContext.Current.Session["UsuarioId"] == null)
+            //{
+            //    string msgError = Base.CommonResourceManager.GetMessage("msgSinSesion") == null ? " -999.- La sesión ha caducado se requiere volver a iniciar sesión." : Base.CommonResourceManager.GetMessage("msgSinSesion");
+            //    //Response.Redirect("~/Pages/login.aspx");
                
-                throw new Exception(msgError);
+            //    throw new Exception(msgError);
 
-            }
+            //}
 
-            this.sqlConection = new SqlConnection(strConn);
-            conexionString = strConn;
+            //this.sqlConection = new SqlConnection(strConn);
+            //conexionString = strConn;
         }
 
         public logic_acces(String strConn, String str)

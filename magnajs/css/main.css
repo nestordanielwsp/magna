@@ -3928,7 +3928,7 @@ a {
     }
 }
 
-#preloader, .quala-loader {
+#preloader, .empresa-loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -3972,7 +3972,7 @@ table #preloader {
         animation: spin 2s linear infinite;
     }
 
-#preloader > div, .quala-loader > div {
+#preloader > div, .empresa-loader > div {
     display: block;
     position: relative;
     left: 50%;
@@ -3989,12 +3989,12 @@ table #preloader {
     animation: spin 2s linear infinite
 }
 
-    #preloader > div:after, #preloader > div:before, .quala-loader > div:after, .quala-loader > div:before {
+    #preloader > div:after, #preloader > div:before, .empresa-loader > div:after, .empresa-loader > div:before {
         content: "";
         position: absolute
     }
 
-    #preloader > div:before, .quala-loader > div:before {
+    #preloader > div:before, .empresa-loader > div:before {
         top: 5px;
         left: 5px;
         right: 5px;
@@ -4005,7 +4005,7 @@ table #preloader {
         animation: spin 3s linear infinite;
     }
 
-    #preloader > div:after, .quala-loader > div:after {
+    #preloader > div:after, .empresa-loader > div:after {
         top: 15px;
         left: 15px;
         right: 15px;
@@ -4990,7 +4990,7 @@ h1.al-title {
         }
 
         .al-msg-center li > a {
-            color: #3f51b5;
+            color: #FF0000;
             text-decoration: none;
             font-size: 13px;
             position: relative
@@ -6065,7 +6065,7 @@ a.al-sidebar-list-link {
     }
 
 ul.nav.nav-tabs.ul-edit {
-    border-bottom: 2px solid #3f51b5 !important;
+    border-bottom: 2px solid #FF0000 !important;
 }
 
     ul.nav.nav-tabs.ul-edit li a {
@@ -6076,7 +6076,7 @@ ul.nav.nav-tabs.ul-edit {
 
     ul.nav.nav-tabs.ul-edit li.active a {
         background: none;
-        color: #3f51b5;
+        color: #FF0000;
         font-weight: bold;
         border: 0px;
     }
@@ -8337,7 +8337,7 @@ hr {
         font-size: 13px;
         font-weight: 400;
         text-transform: uppercase;
-        background: #3F51B5;
+        background: #FF0000;
         padding: 5px 10px;
         margin: 0;
     }
@@ -8349,7 +8349,7 @@ hr {
     }
 
     .dashboard .md-whiteframe-1dp a {
-        color: #3F51B5 !important;
+        color: #FF0000 !important;
     }
 
 @media screen and (max-width: 600px) {

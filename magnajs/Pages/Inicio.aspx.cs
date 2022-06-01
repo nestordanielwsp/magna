@@ -31,12 +31,7 @@ namespace magnajs.Pages
             var a = new logic_acces(ConexionDB);
             var response = new Dictionary<string, object>();
 
-            var dt = a.ExecuteQuery("Dashboard_Sel", datos);
-            response["Resumen"] = page.DataTableToMap(dt.Tables[0]);
-            response["VentasMarca"] = page.DataTableToMap(dt.Tables[1]);
-            response["VentasCanal"] = page.DataTableToMap(dt.Tables[2]);
-            response["CanalModerno"] = page.DataTableToMap(dt.Tables[3]);
-            response["CanalTradicional"] = page.DataTableToMap(dt.Tables[4]);
+            var dt = a.ExecuteQuery("Dashboard_Sel", datos);            
 
             return response;
         }

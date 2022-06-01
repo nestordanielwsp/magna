@@ -106,6 +106,7 @@ angular.module('app')
         ctrl.views = ViewsService.getViews();
         ctrl.currentView = ViewsService.getCurrent();
         ctrl.role = RolesService.getRole();
+        ctrl.usuarioLogeado = false;
 
         function _showLogOutMenu() {
             ctrl.logOutMenuVisible = true;

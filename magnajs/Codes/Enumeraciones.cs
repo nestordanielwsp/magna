@@ -27,7 +27,7 @@ namespace magnajs.Codes
     }
     public enum TipoFuerza
     {
-        VentasQuala = 1,
+        VentasEmpresa = 1,
         VentasExterna = 2
     }
     public enum TipoVentaExterna
