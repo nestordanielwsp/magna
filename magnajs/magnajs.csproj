@@ -1660,6 +1660,7 @@
     <Content Include="Scripts\pages\inicioController.js" />
     <Content Include="Scripts\pages\configuracionGeneralController.js" />
     <Content Include="Scripts\pages\masterPageController.js" />
+    <Content Include="Scripts\pages\profileController.js" />
     <Content Include="Scripts\utilerias\bind.js" />
     <Content Include="Scripts\utilerias\CalculaRFCCURP.js" />
     <Content Include="Scripts\utilerias\constraints.js" />
