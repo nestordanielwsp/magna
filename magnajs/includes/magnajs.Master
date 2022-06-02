@@ -142,7 +142,7 @@
             <div class="toolbar">
                 <!-- TOOLBAR -->
                 <md-toolbar>
-                    <div class="md-toolbar-tools" style="background-color: #FF0000;">
+                    <div class="md-toolbar-tools" style="background-color: #D9230F;">
                         <!-- <md-button class="md-icon-button" aria-label="Menu" ng-show="true" ng-click="ctrl.toggleMainMenu()">
             <i class="fa fa-bars"></i>
           </md-button> -->
