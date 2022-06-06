@@ -1824,7 +1824,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\img\theme\" />
-    <Folder Include="Pages\DocumentosAmbientePruebas\" />
+    <Folder Include="Documentos\Evidencias\" />
     <Folder Include="Service References\" />
   </ItemGroup>
   <ItemGroup>

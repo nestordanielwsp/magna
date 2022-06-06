@@ -634,7 +634,7 @@ form .subtitulo-color {
 
 .ionic .checkbox input:checked:before, .ionic .checkbox input:checked + .checkbox-icon:before {
     background: #2512b2;
-    border-color: #3F51B5;
+    border-color: #FF0000;
 }
 
 select option:disabled {

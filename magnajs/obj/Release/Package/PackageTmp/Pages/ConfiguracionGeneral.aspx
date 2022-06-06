@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/CYP.Master" AutoEventWireup="true" CodeBehind="ConfiguracionGeneral.aspx.cs" Inherits="CYP.Pages.ConfiguracionGeneral" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/magnajs.Master" AutoEventWireup="true" CodeBehind="ConfiguracionGeneral.aspx.cs" Inherits="magnajs.Pages.ConfiguracionGeneral" %>
 
 <asp:Content ID="Head1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

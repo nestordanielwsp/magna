@@ -1,8 +1,8 @@
 ﻿
-Exertus.BuildBinding = function () {
-    if (Exertus.Binding != null)
+Magna.BuildBinding = function () {
+    if (Magna.Binding != null)
         return;
-    Exertus.Binding = function (element) {
+    Magna.Binding = function (element) {
         this.Root = typeof element === "string"
             ? document.getElementById(element)
             : element;
@@ -13,15 +13,15 @@ Exertus.BuildBinding = function () {
         this.Init();
     }
 
-    Exertus.Binding.Group = function () {
+    Magna.Binding.Group = function () {
         this.Elements = [];
     }
 
-    Exertus.Binding.Grid = function () {
+    Magna.Binding.Grid = function () {
         this.Elements = [];
     }
 
-    Exertus.Binding.Group.prototype.ClearConstraints = function () {
+    Magna.Binding.Group.prototype.ClearConstraints = function () {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.DataConstraint = null;
@@ -39,16 +39,16 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.SetConstraints = function (constraintName) {
+    Magna.Binding.Group.prototype.SetConstraints = function (constraintName) {
         this.ClearConstraints();
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.setAttribute("data-constraint", constraintName);
-            Exertus.SetConstraint(element);
+            Magna.SetConstraint(element);
         }
     }
 
-    Exertus.Binding.Group.prototype.AvoidCapture = function () {
+    Magna.Binding.Group.prototype.AvoidCapture = function () {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.AvoidCapture = true;
@@ -59,14 +59,14 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.AddTitle = function (msgAyuda) {
+    Magna.Binding.Group.prototype.AddTitle = function (msgAyuda) {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index]; 
             element.setAttribute("title", msgAyuda);
         }
     }
 
-    Exertus.Binding.Group.prototype.Display = function (clase) {
+    Magna.Binding.Group.prototype.Display = function (clase) {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.Display = true;
@@ -74,7 +74,7 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.EnableCapture = function () {
+    Magna.Binding.Group.prototype.EnableCapture = function () {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
 
@@ -84,7 +84,7 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.Visible = function (esVisible) {
+    Magna.Binding.Group.prototype.Visible = function (esVisible) {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
            
@@ -98,13 +98,13 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    var type = Exertus.Binding;
+    var type = Magna.Binding;
     type.ValidationStates = {
         VALID: "Valid",
         INVALID: "Invalid"
     };
 
-    var prototype = Exertus.Binding.prototype;
+    var prototype = Magna.Binding.prototype;
     prototype.Type = type;
     prototype.Inputs = {};
     prototype.Validators = {};
@@ -137,8 +137,8 @@ Exertus.BuildBinding = function () {
 
             isGrouped = input.getAttribute("group-name");
             if (isGrouped != null) {
-                if (typeof (Exertus.Binding.Group) != 'undefined') {
-                    this.Groups[isGrouped] = this.Groups[isGrouped] || new Exertus.Binding.Group();
+                if (typeof (Magna.Binding.Group) != 'undefined') {
+                    this.Groups[isGrouped] = this.Groups[isGrouped] || new Magna.Binding.Group();
                 }
                 else {
                     this.Groups[isGrouped] = this.Groups[isGrouped] || new this.Group();
@@ -148,7 +148,7 @@ Exertus.BuildBinding = function () {
 
             isGrid = input.getAttribute("grid");
             if (isGrid != null) {
-                this.Grids[isGrid] = this.Grids[isGrid] || new Exertus.Binding.Grid();
+                this.Grids[isGrid] = this.Grids[isGrid] || new Magna.Binding.Grid();
                 this.Grids[isGrid].Elements.push(input);
             }
 
@@ -160,7 +160,7 @@ Exertus.BuildBinding = function () {
 
                 var calendar = input.getAttribute("calendar");
                 if (calendar != null)
-                    new Exertus.DatePicker(input);
+                    new Magna.DatePicker(input);
 
                 var format = input.getAttribute("Format");
 
@@ -176,7 +176,7 @@ Exertus.BuildBinding = function () {
 
                 this.Inputs[propertyName] = input;
                 input.Binding = this;
-                Exertus.SetConstraint(input);
+                Magna.SetConstraint(input);
             }
 
 
@@ -213,7 +213,7 @@ Exertus.BuildBinding = function () {
             for (var index = 0; index < this.Elements.length; index++) {
                 var element = this.Elements[index];
                 element.setAttribute("data-constraint", constraintName);
-                Exertus.SetConstraint(element);
+                Magna.SetConstraint(element);
             }
         }
 
@@ -405,7 +405,7 @@ Exertus.BuildBinding = function () {
                     var filter = this.Filters[filterName || "_"];
                     if (datasource != null) {
                         var elements = filter == null ? datasource : filter(entity, datasource);
-                        Exertus.FillCombo(input, elements, Orchestra.DefaultSelectOption, entity[propertyName]);
+                        Magna.FillCombo(input, elements, Orchestra.DefaultSelectOption, entity[propertyName]);
                     }
                 }
 
@@ -466,7 +466,7 @@ Exertus.BuildBinding = function () {
 
         for (propertyName in this.Inputs) {
             var field = this.Inputs[propertyName];
-            Exertus.ClearConstraintStyle(field);
+            Magna.ClearConstraintStyle(field);
         }
     }
 
@@ -477,7 +477,7 @@ Exertus.BuildBinding = function () {
 
         for (propertyName in this.Inputs) {
             var field = this.Inputs[propertyName];
-            Exertus.ClearConstraintStyle(field);
+            Magna.ClearConstraintStyle(field);
         }
     }
 
@@ -513,7 +513,7 @@ Exertus.BuildBinding = function () {
 
 
             var input = this.Inputs[propertyName];
-            var validationInfo = Exertus.ValidateConstraint(input);
+            var validationInfo = Magna.ValidateConstraint(input);
             summary.Valid = summary.Valid && validationInfo.Valid; 
             
             if (validationInfo.Valid !== true && validationInfo.Message != null)
@@ -535,7 +535,7 @@ Exertus.BuildBinding = function () {
         }
         for (propertyName in states) {
             var input = this.Inputs[propertyName];
-            var validationInfo = Exertus.ValidateConstraint(input);
+            var validationInfo = Magna.ValidateConstraint(input);
             summary.Valid = summary.Valid && validationInfo.Valid;
 
             if (validationInfo.Valid !== true && validationInfo.Message != null)

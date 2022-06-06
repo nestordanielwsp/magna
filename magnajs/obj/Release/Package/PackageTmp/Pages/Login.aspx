@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CYP.Pages.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="magnajs.Pages.Login" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Quala</title>
+    <title>Magna</title>
     <link href="../css/login/font-face-login.css" rel="stylesheet" />
     <link href="../css/login/font-awesome.min.css" rel="stylesheet" />
     <link href="../css/login/normalize.min.css" rel="stylesheet" />
@@ -24,7 +24,7 @@
                     <div class="col-lg-4">
                         <div class="body-content">
                             <div class="title-trade">
-                                <h2><b>Trade Promotion Management</b></h2>
+                                <h2><b>Fast Response</b></h2>
                             </div>
                             <input id="txtUsuario" runat="server" type="text" class="form-control" placeholder="Usuario" autofocus  />
                             <i class="fa fa-user"></i>

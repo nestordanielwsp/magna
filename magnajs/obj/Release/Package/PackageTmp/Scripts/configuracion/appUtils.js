@@ -85,7 +85,7 @@ if (!$Ex) {
     $Ex.Http = null;
     $Ex.Sucess = function () {
         Ex.load(false);
-        $("#loading").removeClass("quala-loader");
+        $("#loading").removeClass("empresa-loader");
     };
 
     $Ex.Error = function (detail) {
@@ -158,7 +158,7 @@ if (!$Ex) {
             }
             if (load) {
                 Ex.load(true);
-                $("#loading").addClass("quala-loader");
+                $("#loading").addClass("empresa-loader");
             }
             var lastData = $.extend({}, data);
 
@@ -219,7 +219,7 @@ if (!$Ex) {
 
                     Ex.mensajes(msgRequiredField, 5);
                     Ex.load(false);
-                    $("#loading").removeClass("quala-loader");
+                    $("#loading").removeClass("empresa-loader");
                     onSuccess(null, true);
                     return;
                 }
@@ -228,7 +228,7 @@ if (!$Ex) {
             if (typeof (additionalRulesfn) == 'function') {
                 if (!additionalRulesfn()) {
                     Ex.load(false);
-                    $("#loading").removeClass("quala-loader");
+                    $("#loading").removeClass("empresa-loader");
                     return;
                 }
             }
@@ -250,7 +250,7 @@ if (!$Ex) {
                         onSuccess(response);
                         if (isload == undefined || isload) {
                             Ex.load(false);
-                            $("#loading").removeClass("quala-loader");
+                            $("#loading").removeClass("empresa-loader");
                         }
                     }
                     else {
@@ -263,13 +263,13 @@ if (!$Ex) {
                     }
                     $Ex.Error(result);
                     Ex.load(false);
-                    $("#loading").removeClass("quala-loader");
+                    $("#loading").removeClass("empresa-loader");
                 });
         }
         catch (ex) {
             Ex.mensajes(ex.message, 4);
             Ex.load(false);
-            $("#loading").removeClass("quala-loader");
+            $("#loading").removeClass("empresa-loader");
         }
     }
 

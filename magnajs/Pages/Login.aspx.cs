@@ -80,32 +80,27 @@ namespace magnajs.Pages
                         HttpContext.Current.Session["UsuarioId"] = dt.Rows[0]["UsuarioId"].ToString();
                         HttpContext.Current.Session["NumUsuario"] = dt.Rows[0]["NumUsuario"].ToString();
                         HttpContext.Current.Session["Usuario"] = dt.Rows[0]["NombreUsuario"].ToString();
+                        HttpContext.Current.Session["CveUsuario"] = this.txtUsuario.Value;
                         HttpContext.Current.Session["PerfilId"] = dt.Rows[0]["PerfilId"].ToString();
-                        HttpContext.Current.Session["ImgUser"] = dt.Rows[0]["ImgUser"].ToString();
-                        HttpContext.Current.Session["SucursalId"] = "1";//  dt.Rows[0]["SucursalId"].ToString();
-                        HttpContext.Current.Session["EmpresaId"] = "1";// dt.Rows[0]["EmpresaId"].ToString();
-                        HttpContext.Current.Session["UID"] = dt.Rows[0]["UID"].ToString();
-                        HttpContext.Current.Session["AreaId"] = dt.Rows[0]["AreaId"].ToString();
-                        HttpContext.Current.Session["Tema"] = "Portal";
-                        HttpContext.Current.Session["PerfilFuncionalId"] = dt.Rows[0]["PerfilFuncionalId"].ToString();
+                        HttpContext.Current.Session["ImgUser"] = dt.Rows[0]["ImgUser"].ToString();                        
                         //HttpContext.Current.Session["EsCrearModificarActivity"] = dt.Rows[0]["EsCrearModificarActivity"].ToString();
 
-                        switch (opcionRedirect)
-                        {
-                            case "act":
-                                Response.Redirect("Activity.aspx?oid=" + oid);
-                                break;
-                            case "tp":
-                                Response.Redirect("TareasPendientes.aspx");
-                                break;
-                            case "nc":
-                                Response.Redirect("Solicitudes.aspx");
-                                break;
-                            default:
-                                Response.Redirect("Inicio.aspx");
-                                break;
-                        }
-
+                        //switch (opcionRedirect)
+                        //{
+                        //    case "act":
+                        //        Response.Redirect("Activity.aspx?oid=" + oid);
+                        //        break;
+                        //    case "tp":
+                        //        Response.Redirect("TareasPendientes.aspx");
+                        //        break;
+                        //    case "nc":
+                        //        Response.Redirect("Solicitudes.aspx");
+                        //        break;
+                        //    default:
+                        //        Response.Redirect("Inicio.aspx");
+                        //        break;
+                        //}
+                        Response.Redirect("Inicio.aspx");
                     }
                 }
             }

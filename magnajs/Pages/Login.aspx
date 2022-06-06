@@ -24,7 +24,7 @@
                     <div class="col-lg-4">
                         <div class="body-content">
                             <div class="title-trade">
-                                <h2><b>Trade Promotion Management</b></h2>
+                                <h2><b>Fast Response</b></h2>
                             </div>
                             <input id="txtUsuario" runat="server" type="text" class="form-control" placeholder="Usuario" autofocus  />
                             <i class="fa fa-user"></i>

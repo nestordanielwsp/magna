@@ -8,6 +8,12 @@
     counter-reset: section
 }
 
+
+.textovertical {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
 .alert {
     color: #fff;
     font-size: 13px;
@@ -8147,8 +8153,9 @@ hr {
 }
 
 .toolbar .identification {
-    margin-right: 100px;
+    margin-right: 20px;
     text-align: right;
+    width: 400px;
 }
 
     .toolbar .identification .name {
@@ -8276,26 +8283,47 @@ hr {
     }
 
 .dashboard .summary-boxes {
-    color: #fff;
+    color: #000;
     margin: 30px 0;
+    text-align:center;
 }
 
+.resultado {
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin:2px 2px 2px 2px;
+}
+
+.fondo_rojo {
+    background: #FF0000;
+}
+
+.fondo_verde {
+    background: #00B050;
+}
+
+.fondo_amarillo {
+    background: #FFED00;
+}
 
 .dashboard .summary-box {
-    width: 200px;
+    width: 150px;
     border-radius: 2px;
 }
 
     .dashboard .summary-box.summary-total {
-        background: #00c0ef;
+        background: #FFED00;
     }
 
     .dashboard .summary-box.summary-pending {
-        background: #F39C12;
+        background: #FF0000;
     }
 
     .dashboard .summary-box.summary-amount {
-        background: #00A65A;
+        background: #00B050;
     }
 
 .dashboard .summary-box-main {
@@ -8309,13 +8337,14 @@ hr {
 
     .dashboard .summary-box-main .summary-desc {
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 600;
         margin: 10px 10px 20px 0;
     }
 
 .dashboard .summary-box-footer {
     padding: 4px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 600;
     text-align: center;
     background: rgba(0, 0, 0, 0.1);
     color: rgba(255, 255, 255, 0.8);
