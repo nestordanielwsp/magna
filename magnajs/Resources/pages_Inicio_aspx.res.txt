@@ -1,0 +1,45 @@
+﻿Titulo=Fast Response
+TituloGrid=Daily Report
+
+
+btnGuardar=Guardar
+
+gvGeneral-Item=Item
+gvGeneral-FechaInicio=Fecha de Inicio
+gvGeneral-ReportadoPor=Reportado por
+gvGeneral-QuienRespondio=Quien Respondio
+gvGeneral-TipoReclamo=Reclamo de Cliente / Tipo de Reclamo 
+gvGeneral-Modelo=Modelo
+gvGeneral-DescripcionProblema=Descripción del Problema
+gvGeneral->ResponsableRespuesta=Responsable de Respuesta
+gvGeneral-ProximaFecha=Proxima Fecha de Respuesta por Responsable
+gvGeneral-PuntoQuiebre=Contencion Acciones Inmediatas Punto de Quiebre
+gvGeneral-CausaRaiz=Causa Raiz
+gvGeneral-AccionesCorrectivas=Acciones Correctivas Implementadas
+gvGeneral-QualityFocus=Quality Focus (QFC)
+gvGeneral-Deteccion=Deteccion / Poka Yokes 
+gvGeneral-AuditoriaCapas=Auditoria por (LPA)
+gvGeneral-ValidacionAcciones=Validación de Acciones Correctivas
+gvGeneral-PlanControl=Actualización AMEF / Plan de Control  
+gvGeneral-ActualizacionHIOE=Actualización de HIOE
+gvGeneral-LeccionesAprendidas=Lecciones Aprendidas
+gvGeneral-PlanAccion=Plan de Accion / Contramedidas  
+gvGeneral-FechaPropuestaCierre=Fecha Propuesta de Cierre
+gvGeneral-FechaRealCierre=Fecha Real de Cierre
+gvGeneral-EstatusGlobal=Estatus Global (R, Y, G)
+gvGeneral-Departamento=Departamento
+gvGeneral-TiempoObjetivo=TIEMPO OBJETIVO, ESTATUS Y FECHA DE TERMINO
+gvGeneral-Completo=Completo
+gvGeneral-NoAplica=No Aplica
+
+lblTooltipAprobar=Aprobar
+lblTooltipRechazar=Rechazar
+
+msgAbrirEvidencia=Antes de aprobar o rechazar debe revisar la evidencia.
+msgConfirmarAprobado=Se aprobará, ¿Desea continuar?
+msgConfirmarRechazado=Se rechazará, ¿Desea continuar?
+msgArchivoNoEncontrado=No se encontro el archivo.
+folderArchivos=Evidencias
+maxFileSize=20
+validExtensions=xlx,xlsx,pdf,doc,docx,png,jpg,jpeg
+lblDescargar=Descargar
