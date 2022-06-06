@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="UploadExcelFile.ashx.cs" Class="CYP.Codes.UploadExcelFile" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="UploadExcelFile.ashx.cs" Class="magnajs.Codes.UploadExcelFile" %>

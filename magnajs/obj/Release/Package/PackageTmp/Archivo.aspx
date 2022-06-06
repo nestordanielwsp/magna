@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Archivo.aspx.cs" Inherits="CYP.Archivo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Archivo.aspx.cs" Inherits="magnajs.Archivo" %>
 
 <!DOCTYPE html>
 

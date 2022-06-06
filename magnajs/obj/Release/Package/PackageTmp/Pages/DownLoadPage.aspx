@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DownLoadPage.aspx.cs" Inherits="CYP.pages.DownLoadPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DownLoadPage.aspx.cs" Inherits="magnajs.pages.DownLoadPage" %>
 
 <!DOCTYPE html>
 

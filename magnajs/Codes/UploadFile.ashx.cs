@@ -8,6 +8,8 @@ using System.Web;
 using logic;
 using System.Web.Script.Serialization;
 using Infraestructura.Archivos;
+using System.Text.RegularExpressions;
+using RestSharp.Extensions;
 
 namespace magnajs.Codes
 {
@@ -30,13 +32,19 @@ namespace magnajs.Codes
                 var rutaArchivo = ConfigurationManager.AppSettings["CarpetaArchivos"] + folder + "/";
 
                 datos["UID"] = Guid.NewGuid().ToString().Substring(1, 7) + "_";
-                datos["NombreArchivo"] = nombreArchivo;
-                nombreArchivo = datos["UID"] + nombreArchivo;
-                datos["RutaArchivo"] = nombreArchivo;
+                datos["NombreArchivo"] = datos["UID"] + nombreArchivo;
+
                 datos["EsNuevo"] = true;
 
-                rutaArchivo += nombreArchivo;
-                storage.Guardar(archivo.InputStream, rutaArchivo);
+                rutaArchivo += datos["NombreArchivo"];
+
+                string folderName = AppDomain.CurrentDomain.BaseDirectory;
+                var root = Path.Combine(folderName, rutaArchivo);
+
+                File.WriteAllBytes(root, archivo.InputStream.ReadAsBytes());
+                // storage.Guardar(archivo.InputStream, rutaArchivo);
+
+
             }
             catch (Exception ex)
             {

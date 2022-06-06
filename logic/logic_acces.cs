@@ -48,8 +48,8 @@ namespace logic
 
             //}
 
-            //this.sqlConection = new SqlConnection(strConn);
-            //conexionString = strConn;
+            this.sqlConection = new SqlConnection(strConn);
+            conexionString = strConn;
         }
 
         public logic_acces(String strConn, String str)

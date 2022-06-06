@@ -495,7 +495,7 @@ ui-modal .modal-body {
 }
 
 .cell-separator {
-    border-right: 2px solid #1a78b7 !important;
+    border-right: 2px solid #000 !important;
 }
 
 .other-filters {
@@ -565,7 +565,7 @@ th .pointer.fa-search {
     font-weight: bold
 }
 .totales {
-    background-color: #1a78b7;
+    background-color: #000;
     font-weight: bold
 }
 .jsgrid-table .btn-link {

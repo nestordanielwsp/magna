@@ -149,9 +149,11 @@ namespace magnajs.Codes
         public static void MoveFileToDateDirectory(string path, Dictionary<string, object> data,
             string idName, string adittionalFolder = "")
         {
+
+
             var storage = new AlmacenamientoAzureServicio();
             var fileName = data["RutaArchivo"].ToString();
-            var newName = fileName.Replace(data["UID"].ToString(), data[idName] + "_");
+            var newName = fileName.Replace(data["UID"].ToString(), "_");
             var dateDirectory = DateTime.Today.ToString("yyyyMM") + "/";
             var newPath = path + (adittionalFolder != "" ? adittionalFolder + "/" : "") + dateDirectory;
           
@@ -159,9 +161,15 @@ namespace magnajs.Codes
             fileName = newName;
             newPath += fileName;
 
-            storage.Mover(path, newPath);
+            File.Copy(path, newPath);
+            //storage.Mover(path, newPath);
 
             data["RutaArchivo"] = (adittionalFolder != "" ? adittionalFolder + "/" : "") + dateDirectory + fileName;
+
+
+
+
+
 
         }
 

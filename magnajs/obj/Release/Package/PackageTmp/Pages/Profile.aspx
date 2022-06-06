@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/CYP.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="CYP.Pages.Profile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/includes/magnajs.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="magnajs.Pages.Profile" %>
 
 <asp:Content ID="Head1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
